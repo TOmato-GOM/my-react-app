@@ -1,0 +1,55 @@
+.quiz_container {
+  border: 1px black solid;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 4px;
+}
+
+.info_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question_number {
+  align-self: flex-end;
+}
+
+progress {
+  width: 400px;
+  height: 3rem;
+}
+
+.question {
+  padding: 1.5rem 0;
+}
+
+.answerBtn {
+  padding: 10px;
+  margin: 0 1rem;
+  border-radius: 5px;
+  border: 1px solid pink;
+  background-color: white;
+  cursor: pointer;
+}
+
+.answerBtn:hover {
+  background-color: rgb(244, 217, 222);
+}
+
+.answerBtn:active {
+  background-color: rgb(173, 173, 173);
+}
+
+.end {
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.allGrade {
+  font-size: 2rem;
+  margin: 0 auto;
+}

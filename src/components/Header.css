@@ -1,0 +1,12 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightblue;
+  align-items: center;
+  height: 4rem;
+  padding: 0 0.9rem;
+}
+
+h2 {
+  flex: 1;
+}
