@@ -31,7 +31,7 @@ const Quiz = () => {
     if (data.length > 0) {
       setQuiz(data[count]);
     }
-  });
+  }, [data, count]);
 
   const answer = quiz?.incorrect_answers?.concat(quiz.correct_answer);
 
@@ -45,14 +45,14 @@ const Quiz = () => {
         <span className="question_number">문제 {count + 1} / 10</span>
       </div>
       <h2 className="question">{quiz.question}</h2>
-      {answer?.map((i) => (
+      {answer?.map((item, i) => (
         <button
           className="answerBtn"
           onClick={(e) => handleCount(e)}
-          value={i}
-          key={i}
+          value={item}
+          key={item}
         >
-          {i}
+          {`${i + 1}. ${item}`}
         </button>
       ))}
     </div>
